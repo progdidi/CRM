@@ -1,0 +1,52 @@
+@import 'var';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 171%;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 1520px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main-btn {
+    background-color: var(--black-color);
+    color: #FFFFFF;
+    font-family:  "Inter", sans-serif;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 600px) {
+    .section__title {
+        font-size: 34px;
+        line-height: 112%;
+
+    }
+}
