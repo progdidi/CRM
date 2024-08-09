@@ -9,44 +9,28 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    line-height: 171%;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--text-color);
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1420px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
-.container-fluid {
-    max-width: 1520px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
-.main-btn {
+.black-btn {
+    border-radius: 5px;
     background-color: var(--black-color);
-    color: #FFFFFF;
-    font-family:  "Inter", sans-serif;
-    border-radius: 8px;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
     text-align: center;
-}
-
-.section__title {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 110%;
-    letter-spacing: -0.01em;
-    margin-bottom: 48px;
-}
-
-@media (max-width: 600px) {
-    .section__title {
-        font-size: 34px;
-        line-height: 112%;
-
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.05);
     }
 }

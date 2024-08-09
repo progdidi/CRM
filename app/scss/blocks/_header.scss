@@ -1,14 +1,37 @@
-header {
+.header {
+    background-image: url('../../images/promo/bg.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-bottom: 200px;
     &-top {
+        padding: 51px 0;
         &__inner {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             .logo {
-
+                display: block;
+                margin-right: auto;
             }
 
             .menu {
+                padding: 12px 0;
+                color: var(--black-color);
+                font-weight: 500;
                 &__list {
+                    display: flex;
+                    align-items: center;
+                    gap: 45px;
                     &-item {
+                        border-bottom: 1px solid transparent;
+                        transition: all 0.3s;
+                        &:hover {
+                            border-bottom: 1px solid var(--black-color);
+                        }
 
+                        
                     }
 
                     &-link {
@@ -18,28 +41,53 @@ header {
             }
 
             .login-btn {
-                
+                padding: 12px 0;
+                width: 127px;
+                margin-left: 45px;
             }
         }
 
     }
 
     .promo {
+        padding-top: 134px;
         &__info {
+            max-width: 632px;
             &-title {
-
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 133%;
+                text-transform: capitalize;
+                color: var(--black-color);
+                margin-bottom: 21px;
             }
             &-text {
-
+                font-size: 25px;
+                line-height: 160%;
+                text-transform: capitalize;
+                font-family: "Open Sans", sans-serif;
+                margin-bottom: 34px;
             }
 
             &-buttons{
+                display: flex;
+                align-items: center;
+                gap: 36px;
+                margin-bottom: 76px;
                 .promo__info-btn {
-
+                    width: 183px;
+                    padding: 14px 0;
                 }
 
                 .promo__info-link {
-
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: #303030;
+                    border-bottom: 1px solid transparent;
+                    transition: all 0.3s;
+                    &:hover {
+                        border-bottom: 1px solid var(--black-color);
+                    }
                 }
             }
 
