@@ -22,15 +22,18 @@ body {
     margin: 0 auto;
 }
 
-.black-btn {
-    border-radius: 5px;
-    background-color: var(--black-color);
-    color: #fff;
+.section__title {
     font-weight: 600;
+    font-size: 40px;
+    line-height: 133%;
     text-transform: capitalize;
-    text-align: center;
-    transition: all 0.5s;
-    &:hover {
-        transform: scale(1.05);
-    }
+    color: var(--black-color);
+}
+
+.item__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+    text-transform: capitalize;
+    color: var(--black-color);
 }
