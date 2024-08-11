@@ -1,0 +1,40 @@
+.how {
+    &__inner {
+        display: flex;
+        .how__info {
+            &-title {
+            }
+            &-text {
+            }
+            .how__items {
+                .how__item {
+                    &-num {
+                    }
+                    &-title {
+                    }
+                    &-text {
+                    }
+                }
+                
+            }
+            
+        }
+        
+        .apps {
+            background-image: url('../../images/apps/app-bg.png');
+            &__title {
+            }
+            &__comment {
+            }
+            &__text {
+            }
+            &__items {
+                display: flex;
+                .apps__img {
+                }
+            }
+            
+        }
+        
+    }
+}
