@@ -1,0 +1,53 @@
+.sell {
+    background-image: url('../../images/sell/sell-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 126px;
+    color: #fff;
+    .sell__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 86px;
+        &-about {
+            width: 450px;
+            .sell__title {
+                margin-bottom: 9px;
+                color: #fff;
+    
+            }
+            .sell__text {
+            }
+        }
+        
+        .sell__form {
+            .sell__form-label {
+                margin-bottom: 18px;
+            }
+            .sell__form-input {
+                width: 366px;
+                border-radius: 5px;
+                padding: 23px 14px 23px 31px;
+                display: block;
+                &::placeholder {
+                    color: #939393;
+                }
+            }
+            .sell__form-btn {
+                display: inline;
+                background-color: #4be3eb;
+                font-weight: 600;
+                color: #303030;
+                text-align: center;
+                width: 182px;
+                padding: 22px 0;
+            }
+        }
+        
+    }
+    
+    .sell__img {
+        display: block;
+        margin: 0 auto;
+    }
+}

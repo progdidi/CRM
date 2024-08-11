@@ -13,6 +13,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 160%;
+    text-transform: capitalize;
     color: var(--text-color);
 }
 
@@ -47,6 +48,6 @@ body {
 }
 
 p {
-    text-transform: capitalize;
+    
     font-family: var(--second-font);
 }
