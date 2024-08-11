@@ -1,0 +1,25 @@
+.clients {
+    padding-top: 50px;
+    margin-bottom: 90px;
+    &__title {
+        text-align: center;
+        margin-bottom: 9px;
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .clients__item {
+            padding: 50px 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clients__item-img {
+        }
+    }
+}
+
