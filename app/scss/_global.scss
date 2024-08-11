@@ -22,6 +22,14 @@ body {
     margin: 0 auto;
 }
 
+.black-btn {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--black-color);
+}
+
 .section__title {
     font-weight: 600;
     font-size: 40px;
@@ -36,4 +44,9 @@ body {
     line-height: 133%;
     text-transform: capitalize;
     color: var(--black-color);
+}
+
+p {
+    text-transform: capitalize;
+    font-family: var(--second-font);
 }

@@ -1,0 +1,50 @@
+.help {
+    background-image: url('../../images/help/help-bg.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 76px;
+        .help__info {
+            max-width: 641px;
+            &-title {
+                margin-bottom: 17px;
+            }
+            &-text {
+                font-family: var(--second-font);
+                margin-bottom: 55px;
+            }
+            .help__items {
+                display: flex;
+                justify-content: space-between;
+                gap: 43px;
+                margin-bottom: 55px;
+                .help__item {
+                    width: 300px;
+                    &-img {
+                        margin-bottom: 10px;
+                    }
+                    &-title {
+                        margin-bottom: 9px;
+                    }
+                    &-text {
+                    }
+                }
+            }           
+           
+            &-btn {
+                padding: 14px 40px;
+            }
+        }
+        
+        .help__media {
+            &-img {
+            }
+        }
+    }
+}
+
+
