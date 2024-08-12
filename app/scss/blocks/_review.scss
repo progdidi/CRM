@@ -1,26 +1,88 @@
 .review {
+    background-color: var(--black-color);
+    color: #fff;
+    padding: 144px 0;
+    margin-bottom: 152px;
     .review-slider {
+        position: relative;
+        margin-bottom: 115px;
         &__wrapper {
             .review__item {
+                max-width: 730px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
                 &-img {
 
                 }
 
                 &-author {
-
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 133%;
+                    margin-bottom: 1px;
                 }
 
                 &-job {
-
+                    margin-bottom: 20px;
                 }
 
                 &-rating {
-
+                    display: flex;
+                    margin-bottom: 20px;
                 }
 
                 &-text {
-                    
+                    font-family: var(--second-family);
+                    font-size: 25px;
                 }
+            }
+        }
+
+        &__buttons {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .review-numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #999;
+        padding-top: 50px;
+        &__item {
+            &-main {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 133%;
+                span {
+                    &.blue {
+                        color: #47cfff;
+                    }
+
+                    &.yellow {
+                        color: #ffb545;
+                    }
+
+                    &.green {
+                        color: #47dd56;
+                    }
+
+                    &.red {
+                        color: #ff5454;
+                    }
+                }
+            }
+
+            &-text {
+                font-weight: 600;
+                text-align: center;
             }
         }
     }
