@@ -1,4 +1,5 @@
 .prices {
+    margin-bottom: 100px;
     &__title {
         margin-bottom: 14px;
         text-align: center;
@@ -18,8 +19,101 @@
         padding: 118px 50px;
         .prices-item {
             width: 571px;
-            background-color: #fff;
             padding: 63px;
+            &__title {
+                margin-left: 64px;
+                margin-bottom: 8px;
+                position: relative;
+                padding-left: 66px;
+                font-size: 35px;
+                line-height: 133%;
+                color: var(--black-color);
+                font-weight: 400;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 57px;
+                    height: 57px;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--black-color);
+                    background-image: url('../../images/prices/item1.svg');
+                }
+                
+
+            }
+
+            &:nth-child(2) {
+                .prices-item__title::before {
+                    background-color: #fff;
+                    background-image: url('../../images/prices/item2.svg');
+                }
+            }
+
+            &__info {
+                background-color: #fff;
+                box-shadow: 0 28px 57px 0 rgba(190, 190, 190, 0.25);
+                border-radius: 30px;
+                padding: 63px 62px;
+                &-price {
+                    margin-bottom: 23px;
+                    font-weight: 700;
+                    font-size: 60px;
+                    line-height: 133%;
+                    text-transform: capitalize;
+                    color: var(--black-color);
+                }
+
+                &-text {
+                    color: var(--black-color);
+                    padding-bottom: 33px;
+                    border-bottom: 1px solid #ccc;
+                    margin-bottom: 21px;
+                }
+
+                .prices-item__list {
+                    margin-bottom: 33px;
+                    &-item {
+                        margin-bottom: 4px;
+                        position: relative;
+                        padding-left: 30px;
+                        font-family: var(--second-family);
+                        line-height: 219%;
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 13px;
+                            height: 11px;
+                            background-image: url('../../images/prices/check.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+
+
+                        }
+                    }
+                }
+
+                .prices-item__button {
+                    width: 100%;
+                    background-color: #eaeaea;
+                    color: var(--black-color);
+                    padding: 26px 0;
+                    &.active {
+                        background-color: var(--black-color);
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }
