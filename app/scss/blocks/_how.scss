@@ -1,0 +1,82 @@
+.how {
+    position: relative;
+    margin-bottom: 111px;
+    &__inner {
+        display: flex;
+        display: flex;
+        .how__info {
+            width: 608px;
+            &-title {
+                margin-bottom: 5px;
+            }
+            &-text {
+                margin-bottom: 37px;
+            }
+            .how__items {
+                .how__item {
+                    margin-bottom: 17px;
+                    border-radius: 30px;
+                    padding: 30px 14px;
+                    border: 1px solid var(--gray-color);
+                    &-num {
+                        font-weight: 600;
+                        font-size: 40px;
+                        line-height: 133%;
+                        text-transform: capitalize;
+                        color: var(--blue-color);
+                    }
+                    &-title {
+                        margin-bottom: 9px;
+                    }
+                    &-text {
+                        max-width: 408px;
+                    }
+                }
+                
+            }
+            
+        }
+        
+        .apps {
+            border-radius: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #f6f6f6;
+            padding: 115px 85px 85px 80px;
+            background-image: url('../../images/apps/app-bg.svg');
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            &__info {
+                width: 570px;
+                .apps__title {
+                    margin-bottom: 21px;
+                }
+                .apps__comment {
+                    font-family: var(--second-family);
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 160%;
+                    color: #3ba3c8;
+                    margin-bottom: 22px;
+                }
+                .apps__text {
+                    font-family: var(--second-family);
+                    margin-bottom: 48px;
+                }
+                .apps__items {
+                    display: flex;
+                    gap: 26px;
+                    align-items: center;
+                    .apps__img {
+                        display: block;
+                    }
+                }
+            }
+            
+            
+        }
+        
+    }
+}
