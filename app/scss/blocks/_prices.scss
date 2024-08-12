@@ -1,0 +1,25 @@
+.prices {
+    &__title {
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    &__items {
+        display: flex;
+        background-image: url('../../images/prices/bg.svg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        padding: 118px 50px;
+        .prices-item {
+            width: 571px;
+            background-color: #fff;
+            padding: 63px;
+        }
+    }
+}
