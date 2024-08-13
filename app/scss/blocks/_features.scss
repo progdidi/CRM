@@ -43,3 +43,14 @@
         }
     }
 }
+
+@media (max-width: 1100px) {
+    .features {
+        &__items {
+            gap: 30px;
+            .features__item {
+                padding: 30px 20px;
+            }
+        }
+    }
+}

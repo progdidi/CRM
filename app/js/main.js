@@ -16,9 +16,7 @@ window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset;
     const headerHeight = header.getBoundingClientRect().height;
 
-    console.log(scrollHeight);
-    console.log(headerHeight);
-
+   
     if(scrollHeight > headerHeight) {
       header.classList.add('fixed-header');
     } else {
@@ -27,3 +25,31 @@ window.addEventListener('scroll', () => {
     }
 })
 
+//features section
+const featuresGroup = document.querySelector('.features__items');
+const features = document.querySelectorAll('.features__item');
+
+function addActiveClass (i) {
+  features[i].classList.add('active');
+}
+
+function removeActiveClass () {
+  features.forEach((feature) => {
+    feature.classList.remove('active');
+  });
+}
+
+addActiveClass(1);
+
+featuresGroup.addEventListener('mouseover', (e) => {
+  removeActiveClass();
+  const target = e.target;
+
+  if(target && target.classList.contains('features__item')) {
+    features.forEach((item, i) => {
+      if (target == item) {
+        addActiveClass(i);
+      }
+    })
+  }
+ })

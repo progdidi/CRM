@@ -20,6 +20,10 @@ button {
     cursor: pointer;
 }
 
+img {
+    object-fit: cover;
+}
+
 .container {
     max-width: 1420px;
     padding: 0 10px;
