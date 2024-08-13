@@ -1,53 +1,133 @@
 .sell {
-    background-image: url('../../images/sell/sell-bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 126px;
     color: #fff;
-    .sell__info {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 86px;
-        &-about {
-            width: 450px;
-            .sell__title {
-                margin-bottom: 9px;
-                color: #fff;
-    
-            }
-            .sell__text {
-            }
-        }
+    &__inner {
+        border-radius: 30px;
+        background-image: url('../../images/sell/sell-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 126px 117px;
+        .sell__info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 86px;
+            &-about {
+                width: 40%;
+                .sell__title {
+                    margin-bottom: 9px;
+                    color: #fff;
         
-        .sell__form {
-            .sell__form-label {
-                margin-bottom: 18px;
-            }
-            .sell__form-input {
-                width: 366px;
-                border-radius: 5px;
-                padding: 23px 14px 23px 31px;
-                display: block;
-                &::placeholder {
-                    color: #939393;
+                }
+                .sell__text {
                 }
             }
-            .sell__form-btn {
-                display: inline;
-                background-color: #4be3eb;
-                font-weight: 600;
-                color: #303030;
-                text-align: center;
-                width: 182px;
-                padding: 22px 0;
+            
+            .sell__form {
+                width: 50%;
+                position: relative;
+                &-label {
+                    
+                }
+                &-input {
+                    margin-top: 18px;
+                    width: 65%;
+                    border-radius: 5px;
+                    padding: 23px 14px 23px 31px;
+                    display: block;
+                    &::placeholder {
+                        color: #939393;
+                    }
+                }
+                &-btn {
+                    position: absolute;
+                    right: 0;
+                    top: 50px;
+                    display: inline;
+                    background-color: #4be3eb;
+                    font-weight: 600;
+                    color: #303030;
+                    text-align: center;
+                    width: 33%;
+                    padding: 22px 0;
+                }
             }
+            
         }
         
+        .sell__img {
+            display: block;
+            margin: 0 auto;
+        }
     }
     
-    .sell__img {
-        display: block;
-        margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .sell {
+        &__inner {
+            padding: 90px 60px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .sell {
+        &__inner {
+           .sell__info {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 40px;
+            &-about {
+                width: 80%;
+                text-align: center;
+            }
+            .sell__form {
+                width: 80%;
+                
+            }
+           }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .sell {
+        &__inner {
+            padding: 60px 20px 40px 20px;
+           .sell__info {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            .sell__form {
+                width: 80%;
+            }
+           }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .sell {
+        &__inner {
+            padding: 40px 15px 30px 15px;
+           .sell__info {
+            gap: 50px;
+            &-about {
+                width: 90%;
+            }
+            .sell__form {
+                width: 100%;
+                &-input {
+                    padding: 15px 10px;
+                }
+                &-btn {
+                    padding: 15px 0;
+                }
+            }
+           }
+        }
     }
 }
