@@ -56,3 +56,19 @@
     }
 }
 
+@media (max-width: 700px) {
+    .allocate {
+        &__inner {
+            flex-direction: column-reverse;
+            gap: 40px;
+            .allocate__info {
+                .allocate__items {
+                    .allocate__item {
+                        padding: 20px 25px;
+                    }
+                }
+            } 
+        }
+    }
+}
+

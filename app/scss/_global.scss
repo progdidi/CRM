@@ -59,3 +59,16 @@ img {
     color: var(--black-color);
     margin-bottom: 6px;
 }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    .section__title {
+        font-size: 30px;
+    }
+    .item__title {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+}
