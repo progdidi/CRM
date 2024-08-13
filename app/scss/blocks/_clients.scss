@@ -13,12 +13,23 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         .clients__item {
-            padding: 50px 65px;
+            padding: 50px 0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .clients__item-img {
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .clients {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+            .clients__item {
+                padding: 20px 0;
+            }
         }
     }
 }
