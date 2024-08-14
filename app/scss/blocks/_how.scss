@@ -3,17 +3,19 @@
     margin-bottom: 111px;
     &__inner {
         display: flex;
-        display: flex;
         .how__info {
-            width: 608px;
+            width: 44%;
             &-title {
                 margin-bottom: 5px;
             }
             &-text {
+                width: 95%;
                 margin-bottom: 37px;
             }
             .how__items {
                 .how__item {
+                    display: flex;
+                    gap: 23px;
                     margin-bottom: 17px;
                     border-radius: 30px;
                     padding: 30px 14px;
@@ -38,18 +40,19 @@
         }
         
         .apps {
+            width: 70%;
             border-radius: 30px;
             position: absolute;
-            right: 0;
+            right: -20%;
             top: 0;
             background-color: #f6f6f6;
             padding: 115px 85px 85px 80px;
             background-image: url('../../images/apps/app-bg.svg');
-            background-position: bottom right;
+            background-position: center bottom;
             background-repeat: no-repeat;
             background-size: contain;
             &__info {
-                width: 570px;
+                width: 55%;
                 .apps__title {
                     margin-bottom: 21px;
                 }
@@ -71,6 +74,7 @@
                     align-items: center;
                     .apps__img {
                         display: block;
+                        max-width: 50%;
                     }
                 }
             }
@@ -78,5 +82,75 @@
             
         }
         
+    }
+}
+
+@media (max-width: 1200px) {
+    .how {
+        &__inner {
+            
+            .apps {
+                padding: 70px 30px 55px 30px;
+                &__info {
+                    width: 60%;
+                    .apps__title {
+                        font-size: 30px;
+                    }
+                }
+                
+                
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .how {
+        &__inner {
+            flex-direction: column;
+            .how__info {
+                width: 100%;
+                &-title {
+                    text-align: center;
+                }
+                &-text {
+                    text-align: center;
+                }
+                .how__items {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .apps {
+                width: 90%;
+                margin: 0 auto;
+                position: static;
+                background-position: right bottom;
+                &__info {
+                    width: 100%;
+                    .apps__title {
+                        font-size: 30px;
+                        
+                    }
+                }
+                
+                
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .how {
+        &__inner {          
+            .apps {
+                width: 100%;
+            }
+            
+        }
     }
 }
