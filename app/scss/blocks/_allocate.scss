@@ -30,8 +30,6 @@
                     padding: 26px 23px 26px 64px;
                     position: relative;
                     margin-bottom: 30px;
-                    border-radius: 30px;
-                    border: 1px solid var(--gray-color);
                     &::before {
                         position: absolute;
                         content: '';
@@ -39,8 +37,8 @@
                         height: 21px;
                         background-color: var(--blue-color);
                         border-radius: 50%;
-                        left: 23px;
-                        top: 37px;
+                        left: 0;
+                        top: 0;
 
                     }
                     &-title {
@@ -60,35 +58,13 @@
 
 @media (max-width: 700px) {
     .allocate {
-        padding-bottom: 70px;
         &__inner {
             flex-direction: column-reverse;
             gap: 40px;
             .allocate__info {
                 .allocate__items {
                     .allocate__item {
-                    }
-                }
-            } 
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .allocate {
-        &__inner {
-            flex-direction: column-reverse;
-            gap: 40px;
-            .allocate__info {
-                .allocate__items {
-                    .allocate__item {
-                        padding: 18px 15px 18px 39px;
-                        &::before {
-                            width: 15px;
-                            height: 15px;
-                            top: 26px;
-                            left: 15px;
-                        }
+                        padding: 20px 25px;
                     }
                 }
             } 

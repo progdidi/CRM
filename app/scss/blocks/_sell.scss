@@ -1,6 +1,7 @@
 .sell {
     color: #fff;
     &__inner {
+        background-color: var(--black-color);
         border-radius: 30px;
         background-image: url('../../images/sell/sell-bg.svg');
         background-repeat: no-repeat;
