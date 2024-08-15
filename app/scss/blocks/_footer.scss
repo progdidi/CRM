@@ -5,42 +5,36 @@
     color: #fff;
     &-head {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        padding-bottom: 40px;
         .social__list {
             display: flex;
             align-items: center;
-            gap: 27px;
+            gap: 23px;
         }
     }
-
     &-table {
-        width: 100%;
         padding-top: 17px;
         padding-bottom: 57px;
-        thead {
-            th {
-                text-align: left;
-                border-top: 1px solid #4a4a4a;
-                border-bottom: 1px solid #4a4a4a;
-                padding: 17px 0;
+        width: 100%;
+        padding-top: 17px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 30%;
+            &__item {
+                .footer-table__title {
+                    padding: 17px 0;
+                    border-bottom: 1px solid #4A4A4A;
+                    border-top: 1px solid #4A4A4A;
+                    margin-bottom: 52px;
+                }
             }
-        }
-
-        tbody {
             .contacts-item {
-                width: 266px;
+                width: 100%;
                 border-radius: 20px;
                 border: 1px solid #4a4a4a;
                 padding: 19px 21px;
             }
 
-            tr {               
-                td {
-                    padding: 52px 0;
-                }
-            }
+           
 
             .news__link {
                 display: block;
@@ -60,12 +54,41 @@
                 }
             }
         }
-       
-    }
 
     &-bottom {
         padding-top: 27px;
         text-align: center;
         border-top: 1px solid #4a4a4a;
     }
+}
+
+@media (max-width: 850px) {
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 32px;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .footer {
+        &-table {
+            grid-template-columns: 50% 50%;
+            grid-row-gap: 40px;
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+    .footer {
+        &-table {
+            &__item {
+                &:nth-child(3) {
+                    grid-column: 1/3;
+                }
+            }
+        }
+    }
+
 }
